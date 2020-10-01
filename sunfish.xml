@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!--
+    * target: Google sunfish(Pixel4a)
+    * rom: TWRP Recovery Project
+    -->
+
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="https://android-review.googlesource.com/" />
+  <default revision="refs/tags/android-10.0.0_r45"
+           remote="aosp"
+           sync-c="true"
+           sync-j="12" />
+
+  <project path="device/google/sunfish-sepolicy" name="device/google/sunfish-sepolicy" groups="device,sunfish" />
+  <project path="hardware/google/interfaces" name="platform/hardware/google/interfaces" groups="pdk" />
+  <project path="hardware/google/pixel" name="platform/hardware/google/pixel" groups="generic_fs,pixel" />
+  <project path="external/roboto-fonts" name="platform/external/roboto-fonts" groups="generic_fs,pixel" />
+  <project path="external/noto-fonts" name="platform/external/noto-fonts" groups="generic_fs,pixel" />
+  <project path="external/zopfli" name="platform/external/zopfli" groups="generic_fs,pixel" />
+
+    <!-- Remote -->
+    <remote fetch="https://github.com/tnakamur" name="sunfish" />
+	
+    <!-- Device -->
+    <project name="android_device_google_sunfish" path="device/google/sunfish" remote="sunfish" revision="android-10" />
+
+    <!-- Kernel -->
+    <project name="android_device_google_sunfish-kernel" path="device/google/sunfish-kernel" remote="sunfish" revision="android-10" />
+		
+</manifest>
