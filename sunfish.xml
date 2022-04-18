@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!--
+    * target: Google sunfish(Pixel4a)
+    * rom: TWRP Recovery Project
+    -->
+
+    <!-- Remote -->
+    <remote fetch="https://github.com/tnakamur" name="sunfish" />
+
+    <project path="device/google/sunfish-sepolicy" name="device/google/sunfish-sepolicy" groups="device,sunfish" />
+    <project path="hardware/google/interfaces" name="platform/hardware/google/interfaces" groups="pdk" />
+    <project path="hardware/google/pixel" name="platform/hardware/google/pixel" groups="generic_fs,pixel"/>
+    <project path="hardware/google/pixel-sepolicy" name="platform/hardware/google/pixel-sepolicy" groups="generic_fs,pixel"/>
+
+    <!-- Device -->
+    <project name="android_device_google_sunfish" path="device/google/sunfish" remote="sunfish" revision="android-11" />
+
+    <!-- Kernel -->
+    <project name="android_device_google_sunfish-kernel" path="device/google/sunfish-kernel" remote="sunfish" revision="android-11" />
+	
+</manifest>
