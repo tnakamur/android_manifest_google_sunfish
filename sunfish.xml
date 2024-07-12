@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!--
+    * target: Google sunfish(Pixel4a)
+    * rom: AOSP
+    -->
+
+    <!-- Remote -->
+    <remote fetch="https://github.com/tnakamur" name="sunfish" />
+
+    <!-- Device -->
+    <remove-project name="device/google/sunfish" />
+    <remove-project name="device/google/sunfish-sepolicy" />
+    <project name="android_device_google_sunfish" path="device/google/sunfish" remote="sunfish" revision="android-14" />
+
+    <!-- Kernel -->
+    <remove-project name="device/google/sunfish-kernel" />
+    <project name="android_kernel_google_sunfish" path="kernel/google/sunfish" remote="sunfish" revision="android-14" />
+
+    <!-- Vendor -->
+    <project name="android_vendor_google_sunfish" path="vendor/google/sunfish" remote="sunfish" revision="android-14" />
+</manifest>
