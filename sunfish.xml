@@ -14,8 +14,8 @@
     <project name="android_device_google_sunfish" path="device/google/sunfish" remote="sunfish" revision="android-14" />
 
     <!-- Kernel -->
-    <remove-project name="device/google/sunfish-kernel" />
-    <project name="android_kernel_google_sunfish" path="kernel/google/sunfish" remote="sunfish" revision="android-14" />
+    <!-- <remove-project name="device/google/sunfish-kernel" />
+    <project name="android_kernel_google_sunfish" path="kernel/google/sunfish" remote="sunfish" revision="android-14" /> -->
 
     <!-- Vendor -->
     <project name="android_vendor_google_sunfish" path="vendor/google/sunfish" remote="sunfish" revision="android-14" />
