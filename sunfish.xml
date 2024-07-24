@@ -22,6 +22,10 @@
   <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="lineage" /> -->
 
   <!-- Remote -->
+  <remote name="pixelbuilds"
+          fetch="https://github.com/PixelBuildsROM"
+          revision="unity" />
+
   <remote name="pixelbuilds-blobs-gitlab"
           fetch="https://gitlab.com/PixelBuilds/vendor-blobs"
           revision="unity" />
