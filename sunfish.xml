@@ -34,8 +34,8 @@
 
   <!-- Kernel -->
   <remove-project name="device/google/sunfish-kernel" />
-  <!--<project name="android_kernel_google_msm-4.14" path="kernel/google/msm-4.14" remote="sunfish" revision="android-14" /> -->
+  <project name="android_kernel_google_msm-4.14" path="kernel/google/msm-4.14" remote="sunfish" revision="unity" />
 
   <!-- Vendor -->
-  <!--<project name="android_vendor_google_sunfish" path="vendor/google/sunfish" remote="sunfish" revision="android-14" /> -->
+  <project name="android_vendor_google_sunfish" path="vendor/google/sunfish" remote="pixelbuilds-blobs-gitlab" revision="unity" />
 </manifest>
