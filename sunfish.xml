@@ -106,6 +106,10 @@
           fetch="https://gitlab.com/PixelBuilds/vendor-blobs"
           revision="unity" />
 
+  <remote name="pixelbuilds-gitea"
+          fetch="https://git.pixelbuilds.org/android"
+          revision="unity" />
+
   <remote name="BlissRoms-gitlab"
           fetch="https://gitlab.com/BlissLabs/BlissRoms"
           revision="universe" />
@@ -123,6 +127,7 @@
   <project path="vendor/pb" name="android_vendor_pb" remote="pixelbuilds" >
     <linkfile src="build.sh" dest="pb-build.sh" />
   </project>
+  <project path="vendor/gms" name="android_vendor_gms" remote="pixelbuilds-gitea" clone-depth="1" />
 
   <!-- Hardware repos -->
   <remove-project name="platform/hardware/interfaces" />
