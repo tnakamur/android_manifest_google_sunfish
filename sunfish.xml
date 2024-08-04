@@ -124,10 +124,6 @@
   <!-- Vendor -->
   <project name="android_vendor_google_sunfish" path="vendor/google/sunfish" remote="pixelbuilds-blobs-gitlab" revision="unity" />
   <project path="vendor/gapps" name="platform_vendor_gapps" remote="BlissRoms-gitlab" clone-depth="1" revision="universe" />
-  <project path="vendor/pb" name="android_vendor_pb" remote="pixelbuilds" >
-    <linkfile src="build.sh" dest="pb-build.sh" />
-  </project>
-  <project path="vendor/gms" name="android_vendor_gms" remote="pixelbuilds-gitea" clone-depth="1" />
 
   <!-- Hardware repos -->
   <remove-project name="platform/hardware/interfaces" />
