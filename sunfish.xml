@@ -30,6 +30,10 @@
           fetch="https://gitlab.com/PixelBuilds/vendor-blobs"
           revision="unity" />
 
+  <remote name="BlissRoms-gitlab"
+          fetch="https://gitlab.com/BlissLabs/BlissRoms"
+          revision="universe" />
+
   <!-- Device -->
   <remove-project name="device/google/sunfish" />
   <remove-project name="device/google/sunfish-sepolicy" />
@@ -42,6 +46,7 @@
 
   <!-- Vendor -->
   <project name="android_vendor_google_sunfish" path="vendor/google/sunfish" remote="pixelbuilds-blobs-gitlab" revision="unity" />
+  <project path="vendor/gapps" name="platform_vendor_gapps" remote="BlissRoms-gitlab" clone-depth="1" revision="universe" />
 
   <!-- Hardware repos -->
   <remove-project name="platform/hardware/interfaces" />
